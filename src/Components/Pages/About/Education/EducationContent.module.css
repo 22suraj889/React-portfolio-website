@@ -1,0 +1,26 @@
+.education_info {
+    padding: 20px;
+    color: var(--content-dark-light-color);
+    margin-top: 10px;
+    position: relative;
+}
+
+.education_info__school,
+.education_info__place,
+.education_info__marks {
+    margin-top: 10px;
+}
+
+.education_info::before {
+    content: "";
+}
+
+.education_info__grade {
+    color: var(--font-blue-color);
+}
+
+.hat_icon {
+    position: absolute;
+    left: -55px;
+    background: var(--background-dark-light-color);
+}

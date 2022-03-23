@@ -1,0 +1,34 @@
+.contact_content {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    color: var(--background-dark-light-color);
+    background: var(--navbar-dark-light-color);
+    border-radius: 10px;
+}
+
+.contact_content div {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact_content__by {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.contact_content__img {
+    transition: all 1s ease;
+}
+
+.contact_content:hover .contact_content__img {
+    transform: translateY(-0.5rem);
+}
+
+.contact_content__img img {
+    width: 40px;
+    height: 40px;
+}

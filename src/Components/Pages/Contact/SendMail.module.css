@@ -1,0 +1,100 @@
+.mail_content {
+    display: flex;
+    margin: 4rem 0rem 0rem 12rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mail_content__info {
+    margin-right: 1.5rem;
+}
+
+.mail_content__info input {
+    height: 2.4rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.mail_content__info__message textarea {
+    padding: 10px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.mail_content__info__email,
+.mail_content__info__subject {
+    margin-top: 1rem;
+}
+
+.mail_content__info input,
+.mail_content__info__message textarea {
+    box-shadow: 0px 0px 6px var(--navbar-dark-light-color);
+    border-style: none;
+    transition: all 0.5s ease-in;
+    background-color: var(--background-dark-light-color);
+    color: var(--content-dark-light-color);
+    margin-top: 2rem;
+    width: 22rem;
+}
+
+.mail_content__info input:hover,
+.mail_content__info__message textarea:hover,
+.mail_content__info input:focus,
+.mail_content__info__message textarea:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 2px var(--content-dark-light-color);
+}
+
+.mail_content__info__btn {
+    text-align: end;
+}
+
+.mail_content__info__btn input {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 2rem 2rem 0rem 0rem;
+    width: 10rem;
+    background-color: rgb(10, 133, 204);
+    color: var(--content-dark-light-color);
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.mail_content__info__btn input:hover,
+.mail_content__info__btn:focus {
+    background-color: rgb(3 127 255 / 30%);
+}
+
+@media screen and (max-width: 950px) {
+    .mail_content {
+        margin: 4rem 0.4rem 0rem 0.4rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .mail_content__info__submit {
+        margin-right: 1.5rem;
+    }
+    .mail_content__info__btn {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .mail_content__info {
+        margin-right: 0;
+    }
+    .mail_content__info__submit {
+        margin-right: 0;
+    }
+    .mail_content__info input,
+    .mail_content__info__message textarea {
+        width: 20rem;
+    }
+}

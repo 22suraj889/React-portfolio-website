@@ -1,0 +1,40 @@
+.portfolio_content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    color: var(--background-dark-light-color);
+    background: var(--navbar-dark-light-color);
+    width: 20rem;
+    border-radius: 10px;
+}
+
+.portfolio_content__img {
+    text-align: center;
+    margin-top: 5px;
+    transition: transform 0.5s ease;
+}
+
+.portfolio_content__img:hover {
+    transform: translateY(-1rem);
+}
+
+.portfolio_content__img img {
+    width: 90%;
+    height: 10rem;
+    box-shadow: 10px 10px 10px black;
+}
+
+.portfolio_content__link img {
+    width: 30px;
+    height: 30px;
+}
+
+.portfolio_content__details {
+    padding: 10px;
+    text-align: center;
+}
+
+.portfolio_content__details h2 {
+    margin-bottom: 10px;
+}

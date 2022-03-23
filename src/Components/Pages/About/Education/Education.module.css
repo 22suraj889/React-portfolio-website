@@ -1,0 +1,17 @@
+.education {
+    border-left: 1px solid var(--navbar-dark-light-color);
+    padding-left: 41px;
+    margin: 0px 0px 103px 546px;
+}
+
+@media screen and (max-width: 1236px) and (min-width: 951px) {
+    .education {
+        margin: 0px 0px 103px 400px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .education {
+        margin: 0px 0px 103px 42px;
+    }
+}

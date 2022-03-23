@@ -1,0 +1,12 @@
+.contact_info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 57px 0px 0px 210px;
+}
+
+@media screen and (max-width: 950px) {
+    .contact_info {
+        margin-left: 0px;
+    }
+}

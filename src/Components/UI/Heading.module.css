@@ -1,0 +1,27 @@
+.heading {
+    font-size: 2.4rem;
+    position: relative;
+    text-align: center;
+    color: var(--content-dark-light-color);
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    width: 6.4rem;
+    height: 0.33rem;
+    background-color: var(--font-blue-color);
+    border-radius: 15px;
+    top: 51px;
+    right: 43%;
+}
+
+@media screen and (max-width: 950px) {
+    .heading {
+        text-align: left;
+        margin-left: 17px;
+    }
+    .heading::after {
+        left: 0;
+    }
+}
