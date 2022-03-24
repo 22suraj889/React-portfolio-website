@@ -7,10 +7,14 @@ import Style from "./Navigation.module.css";
 import AppContext from "../Context/AppContext";
 import { useNavigate } from "react-router-dom";
 const Navigation = () => {
-  const { action } = useContext(AppContext);
+  const { action, setAction } = useContext(AppContext);
   const navigate = useNavigate();
   const [activeBtn, setActiveBtn] = useState(1);
   const onClickHandler = (active, path) => {
+    console.log(activeBtn, active);
+    if (activeBtn !== active) {
+      setAction(false);
+    }
     navigate(path);
     setActiveBtn(active);
   };
