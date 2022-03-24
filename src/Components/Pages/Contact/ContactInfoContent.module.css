@@ -20,15 +20,21 @@
     font-weight: bold;
 }
 
-.contact_content__img {
-    transition: all 1s ease;
-}
-
-.contact_content:hover .contact_content__img {
-    transform: translateY(-0.5rem);
-}
-
 .contact_content__img img {
     width: 40px;
     height: 40px;
+    transition: all 1s ease;
+    animation: float 2s infinite ease;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(-0.7rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
 }
