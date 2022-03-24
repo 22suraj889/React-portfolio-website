@@ -10,7 +10,7 @@ const Hamburger = () => {
       document.body.style.overflow = "auto";
     }
   }, [action.burger]);
-  console.log(action);
+  
   return (
     <div
       className={`${Style["burger"]} ${Style[action.burger ? "toggle" : ""]} ${
