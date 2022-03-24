@@ -13,7 +13,7 @@ const Navigation = () => {
   const onClickHandler = (active, path) => {
     console.log(activeBtn, active);
     if (activeBtn !== active) {
-      setAction({ burger: false, ...action });
+      setAction({ ...action, burger: false });
     }
     navigate(path);
     setActiveBtn(active);
