@@ -2,7 +2,7 @@ const PortfolioData = [
   {
     id: 1,
     name: "Portfolio",
-    link: "www.google.com",
+    link: "https://github.com/22suraj889/React-portfolio-website",
     image: "Images/portfolio.png",
     tools: "React js",
     about: "Portfolio website created with React Js"
